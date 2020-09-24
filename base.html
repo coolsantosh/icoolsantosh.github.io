@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta name="HandheldFriendly" content="true">
+
+    <title>{{name}}</title>
+     <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        }
+        .header-site{
+             width:100%;
+             height:100vh;
+             background:linear-gradient(89deg,#00c6a7,#1e4d92);
+          clip-path:polygon(0% 0%,100% 0%,100% 80%,0% 100%);
+        }
+        nav{
+        width:100%;
+        height:100px;
+        display:flex;
+        color:white;
+        font-size:20px;
+        }
+        .logo{
+            width:50%;
+            height:100px;
+        }
+        .logo h1{
+        line-height:100px;
+        padding-left:50px;
+        }
+        .menu{
+         width:50%;
+            height:100px;
+            text-align:right;
+        }
+        span{
+        display:none;
+        cursor:pointer;
+        }
+        .menu ul{
+          width:100%;
+            height:100px;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+             align-items:center;
+        }
+        .menu ul li{
+        list-style:none;
+        }
+         .menu ul li a{
+           color:#fff;
+         }
+           .menu ul li a:hover{
+                 background:white;
+                 color:orange;
+          }
+
+
+        Section{
+              display:flex;
+        }
+      .rightside{
+      width:100%;
+      height:100%;
+      line-height:40px;
+      color:white;
+       align-items:center;
+      }
+      .rightside{
+              margin-top:240px;
+             text-align:center;
+      }
+      .rightside h1{
+              margin-left:140px;
+                margin-right:140px;
+                 font-size:40px;
+      }
+      .rightside button{
+           margin-top:40px;
+           color:#fff;
+           width:160px;
+           height:40px;
+           border:1px solid white;
+             background:linear-gradient(89deg,#00c6a7,#1e4d92);
+      }
+      .rightside button:hover{
+          background:linear-gradient(89deg,#1e4d92,#00c6a7);
+      }
+      @media only screen and (max-width:700px){
+           span{
+               display:block;
+           }
+           .menu ul{
+            display:block;
+            margin-right:05;
+           }
+}
+    </style>
+</head>
+<body>
+<header class="header-site">
+    <nav>
+          <div class="logo">
+        <h1>Cool@Santosh</h1>
+    </div>
+          <div class="menu">
+              <span onclick="toggle()">&#9776;</span>
+        <ul id="menu_list">
+            <li><a href="home">Home</a></li>
+             <li><a href="course">Courses</a></li>
+             <li><a href="blogs">Blogs</a></li>
+             <li><a href="about">About</a></li>
+             <li><a href="contact">Contact</a></li>
+        </ul>
+    </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</header>
+</body>
+</html>

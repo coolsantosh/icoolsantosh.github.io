@@ -1,0 +1,47 @@
+<!doctype html>
+{% extends 'base.html' %}
+<html lang="en" xmlns:font-size="http://www.w3.org/1999/xhtml" xmlns:margin="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Course</title>
+
+</head>
+<body>
+
+
+ {% block content %}
+ <div style="width:100%;background:linear-gradient(70deg,red,#ffff00);height:100%">
+     <div style="width:60%;height:100%">
+         <ul style="margin:30px">
+            <li><a  style="font-size:30px;color:#fff;" href="https://www.w3schools.com/python/"
+                    onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">Python
+            </a></li>
+           <li><a  style="font-size:36px;color:#fff"href="https://www.tutorialspoint.com/django/index.htm"
+                   onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">Django</a></li>
+           <li><a  style="font-size:36px;color:#fff" href="https://www.tutorialspoint.com/java/index.htm"
+                   onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">Java</a><br></li>
+           <li><a  style="font-size:36px;color:#fff" href="https://www.javatpoint.com/html-tutorial"
+                   onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">Html</a><br></li>
+           <li><a  style="font-size:36px;color:#fff" href="https://www.codecademy.com/learn/learn-css"
+                   onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">Css</a><br></li>
+          <li><a  style="font-size:36px;color:#fff" href="https://www.javascripttutorial.net/"
+                  onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">Javascript</a><br></li>
+            <li><a  style="font-size:36px;color:#fff" href="https://www.tutorialrepublic.com/jquery-tutorial/"
+                    onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">JQuery</a><br></li>
+              </ul>
+</div>
+ </div>
+  {% endblock %}
+
+</body>
+</html>
